@@ -82,21 +82,6 @@ basic.forever(function () {
     if (Menu == 0) {
         if (Score >= 50) {
             for (let index = 0; index < 8; index++) {
-                music.play(music.tonePlayable(220, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-                basic.pause(40)
-            }
-            music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-            basic.pause(50)
-            music.play(music.tonePlayable(220, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-            basic.pause(50)
-            music.play(music.tonePlayable(294, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-            basic.pause(50)
-            music.play(music.tonePlayable(220, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-            basic.pause(50)
-            music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-            basic.pause(50)
-        } else {
-            for (let index = 0; index < 8; index++) {
                 music.play(music.tonePlayable(220, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
                 basic.pause(40)
             }
@@ -109,6 +94,21 @@ basic.forever(function () {
             music.play(music.tonePlayable(220, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
             basic.pause(50)
             music.play(music.tonePlayable(262, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+            basic.pause(50)
+        } else {
+            for (let index = 0; index < 8; index++) {
+                music.play(music.tonePlayable(220, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+                basic.pause(40)
+            }
+            music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
+            basic.pause(50)
+            music.play(music.tonePlayable(220, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+            basic.pause(50)
+            music.play(music.tonePlayable(294, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
+            basic.pause(50)
+            music.play(music.tonePlayable(220, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+            basic.pause(50)
+            music.play(music.tonePlayable(262, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
             basic.pause(50)
         }
     } else {
